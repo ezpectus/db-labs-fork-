@@ -15,7 +15,7 @@
 |------|------|--------|---------|
 | [Lab_1](MyWork/Lab_1/) | Концептуальна модель (ER-діаграма) | ✅ | 5 сутностей, 7 зв'язків, самореференс Subscription |
 | [Lab_2](MyWork/Lab_2/) | DDL: CREATE TABLE, INSERT | ✅ | композитні PK у junction-таблицях, CHECK-и |
-| [Lab_3](MyWork/Lab_3/) | OLTP: CRUD-операції | 🔄 | SELECT/INSERT/UPDATE/DELETE |
+| [Lab_3](MyWork/Lab_3/) | OLTP: CRUD-операції | ✅ | SELECT/INSERT/UPDATE/DELETE + CASCADE-демо |
 | Lab_4 | OLAP: JOIN, агрегації | — | — |
 | Lab_5 | Нормалізація 1NF–3NF | — | — |
 | Lab_6 | Міграції (Prisma) | — | — |
@@ -27,6 +27,7 @@
 - **Сурогатні ключі** `UUID` у User/Video/Comment — на них посилаються ззовні.
 - **Композитні ключі** у таблиць-зв'язок: `Like` → `PRIMARY KEY (user_id, video_id)`, `Subscription` → `PRIMARY KEY (subscriber_id, channel_id)` — унікальність пари гарантує сам ключ, без «мертвого» id.
 - **CHECK-и:** спосіб входу у User (`password` АБО `google_id`), `views >= 0` у Video, заборона самопідписки `subscriber_id <> channel_id`.
+- **`created_at` (TIMESTAMPTZ) в усіх 5 таблицях** — абсолютний час: UTC усередині, конвертується під зону сесії.
 - Усі FK з `ON DELETE CASCADE`; самореференс User↔User через Subscription.
 
 ## 📖 Матеріали курсу (з оригінального репо)
