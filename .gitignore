@@ -9,3 +9,8 @@ dumps/*
 exercises/tests/golden_snapshots/**
 !exercises/tests/golden_snapshots/base/
 !exercises/tests/golden_snapshots/base/**
+
+# Node/Prisma (lab6)
+node_modules/
+.env
+*.env
