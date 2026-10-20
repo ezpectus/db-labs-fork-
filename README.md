@@ -16,9 +16,9 @@
 | [Lab_1](MyWork/Lab_1/) | Концептуальна модель (ER-діаграма) | ✅ | 5 сутностей, 7 зв'язків, самореференс Subscription |
 | [Lab_2](MyWork/Lab_2/) | DDL: CREATE TABLE, INSERT | ✅ | композитні PK у junction-таблицях, CHECK-и |
 | [Lab_3](MyWork/Lab_3/) | OLTP: CRUD-операції | ✅ | SELECT/INSERT/UPDATE/DELETE + CASCADE-демо |
-| Lab_4 | OLAP: JOIN, агрегації | — | — |
-| Lab_5 | Нормалізація 1NF–3NF | — | — |
-| Lab_6 | Міграції (Prisma) | — | — |
+| [Lab_4](MyWork/Lab_4/) | OLAP: JOIN, агрегації | ✅ | агрегати одним проходом, HAVING, COUNT(DISTINCT) проти фан-ауту |
+| [Lab_5](MyWork/Lab_5/) | Нормалізація 1NF–3NF | ✅ | аналіз схеми + «хвора» таблиця + ALTER-хірургія з split_part |
+| [Lab_6](MyWork/Lab_6/) | Міграції (Prisma) | ✅ | schema.prisma, 3 міграції, Prisma Studio |
 
 ## 🗄️ Схема БД коротко
 
